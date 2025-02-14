@@ -1,6 +1,6 @@
 {
   "name": "@tbdc-agro-softwares/logger",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A wrapper to standardize logs",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
