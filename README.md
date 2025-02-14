@@ -13,11 +13,11 @@
 ## Install
 
 ```bash
-npm install @tbdc-agro-softwares/vue-plugin
+npm install @tbdc-agro-softwares/logger
 ## or
-yarn add @tbdc-agro-softwares/vue-plugin
+yarn add @tbdc-agro-softwares/logger
 ## or
-pnpm add @tbdc-agro-softwares/vue-plugin
+pnpm add @tbdc-agro-softwares/logger
 ```
 
 ## Setup
