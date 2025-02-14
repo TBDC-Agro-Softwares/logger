@@ -7,6 +7,7 @@
   "files": [
     "dist"
   ],
+  "homepage": "https://github.com/tbdc-agro-softwares/logger#readme",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/tbdc-agro-softwares/logger.git"
@@ -14,7 +15,8 @@
   "author": "TBDC Agro Softwares <engineering@tbdc.com.br>",
   "license": "MIT",
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
+    "registry": "https://npm.pkg.github.com",
+    "access": "public"
   },
   "keywords": [
     "logger"
