@@ -1,0 +1,37 @@
+{
+  /* minify files */
+  "minify": true,
+  "module": {
+    "type": "commonjs"
+  },
+  "exclude": ["./tests/*", ".*\\.spec.*$", ".*\\.test.*$", ".*\\.d.*$"],
+  "jsc": {
+    "externalHelpers": false,
+    "parser": {
+      "syntax": "typescript",
+      "decorators": true,
+      "decoratorsBeforeExport": true
+    },
+    "target": "esnext",
+    "paths": {
+      /* import absolute path */
+      "@packages/*": ["./src/packages/*"],
+      "@utils/*": ["./src/utils/*"],
+      /* import from index.ts */
+      "@packages": ["./src/packages"],
+      "@utils": ["./src/utils"]
+    },
+    "baseUrl": "./",
+    "transform": {
+      "legacyDecorator": true,
+      "decoratorMetadata": true
+    },
+    /* minify files and rename properties */
+    "minify": {
+      "compress": {
+        "unused": true
+      },
+      "mangle": true
+    }
+  }
+}

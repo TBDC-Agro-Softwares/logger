@@ -1,0 +1,1 @@
+"use strict";Object.defineProperty(exports,"__esModule",{value:!0}),!function(e,r){for(var n in r)Object.defineProperty(e,n,{enumerable:!0,get:r[n]})}(exports,{configureTbdcLogger:function(){return n},getConfig:function(){return t}});const e=require("./helpers");let r={logLevel:"debug"};function n(n){r=(0,e.merge)(r,n)}function t(){return r}

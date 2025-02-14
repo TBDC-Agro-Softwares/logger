@@ -1,0 +1,9 @@
+"use strict";var e;Object.defineProperty(exports,"__esModule",{value:!0}),Object.defineProperty(exports,"default",{enumerable:!0,get:function(){return r}});const t=require("./config"),l=(e=require("colors"))&&e.__esModule?e:{default:e};function o(){return l.default.bold(l.default.grey(new Date().toLocaleTimeString()))}class r{static log(e){"debug"===(0,t.getConfig)().logLevel&&console.log(e)}static debug(e,t){console.debug(`[${l.default.blue(e)}] ${o()} ${t}`)}static info(e){"debug"===(0,t.getConfig)().logLevel&&console.info(`[${l.default.cyan("INFO")}] ${o()} ${e}`)}static warn(e){["debug","warning"].includes((0,t.getConfig)().logLevel)&&console.warn(`[${l.default.yellow("WARN")}] ${o()} ${e}`)}static error(e){console.error(`${l.default.bgRed(" ERROR ")} ${o()} ${e??"No stack trace."}`)}static criticalError(e,t){let r=`[${e}]`,a=`${o()} ${t??"No stack trace."}`;console.error(`${l.default.bgRed(l.default.white(r))} ${l.default.red(a)}`)}static applicationError(e){let{name:t,message:r}=e,a=l.default.bgRed(` ${t} `);console.error(`${a} ${o()} ${r}`)}static success(e,t){console.log(`[${l.default.green(e)}] ${o()} ${t}`)}static systemStarted(e){console.log(`
+
+      ${l.default.grey("Project info")}
+      ${l.default.bold(l.default.green("🚀 Server started successfully"))}
+
+      ${l.default.grey("Server running at:")}
+      ${l.default.bold(`http://localhost:${e??"80"}`)}
+
+    `)}static httpDebugStart(e,r){"debug"===(0,t.getConfig)().logLevel&&console.debug(l.default.gray(`[${e}] ${o()} ${r}`))}static httpDebugEnd(e,r,a,u){let c=`[${l.default.blue(e)}]`,n=`[${l.default.cyan(String(a))}]`,d=l.default.magenta(`${u}ms`);("debug"===(0,t.getConfig)().logLevel||u>5e3)&&console.debug(`${c} ${o()} ${r} ${n} ${d}`)}}

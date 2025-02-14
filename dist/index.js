@@ -1,0 +1,1 @@
+"use strict";var e;Object.defineProperty(exports,"__esModule",{value:!0}),!function(e,r){for(var o in r)Object.defineProperty(e,o,{enumerable:!0,get:r[o]})}(exports,{Logger:function(){return r.default},configureTbdcLogger:function(){return o.configureTbdcLogger}});const r=(e=require("./Logger"))&&e.__esModule?e:{default:e},o=require("./config");
