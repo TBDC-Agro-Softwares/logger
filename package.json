@@ -9,7 +9,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/tbdc-agro-softwares/logger"
+    "url": "git+https://github.com/tbdc-agro-softwares/logger.git"
   },
   "author": "TBDC Agro Softwares <engineering@tbdc.com.br>",
   "license": "MIT",
